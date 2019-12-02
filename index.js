@@ -30,7 +30,8 @@ const delSql = `DELETE FROM websites where id = 7`;
 // });
 
 // 查询
-const sql = `SELECT * FROM websites`;
+// const sql = `SELECT * FROM websites`;
+const sql = `select * from websites`;
 connection.query(sql, (error, results, fields) => {
     if (error) throw error;
     console.log(results);
